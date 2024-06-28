@@ -1,3 +1,6 @@
 .directory
 
 *.deb
+*.tar.gz
+
+zz_*/
