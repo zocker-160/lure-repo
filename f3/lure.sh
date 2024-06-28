@@ -25,7 +25,7 @@ build() {
 
 package() {
   cd "$srcdir/$name"
-  make DESTDIR="${pkgdir}" PREFIX='/usr' install{,-extra}
+  make DESTDIR="${pkgdir}" PREFIX='/usr' install
   make DESTDIR="${pkgdir}" PREFIX='/usr' install-extra
 
   install -Dvm644 "${srcdir}/${name}/README.rst" -t "${pkgdir}/usr/share/doc/${name}"
