@@ -15,7 +15,7 @@ checksums=('SKIP')
 
 version() {
 	cd "$srcdir/$name"
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+	printf "%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 build() {
