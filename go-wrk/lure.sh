@@ -25,7 +25,5 @@ build() {
 
 package() {
 	cd "$srcdir/$name"
-
 	install-binary go-wrk
-	install-license LICENSE
 }

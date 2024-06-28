@@ -20,7 +20,5 @@ build() {
 
 package() {
 	cd "$srcdir/$name"
-
 	install-binary scc
-	install-license LICENSE
 }

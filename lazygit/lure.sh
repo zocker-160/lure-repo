@@ -20,7 +20,5 @@ build() {
 
 package() {
 	cd "$srcdir/$name"
-
 	install-binary lazygit
-	install-license LICENSE
 }
