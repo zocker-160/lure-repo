@@ -1,7 +1,7 @@
 maintainer="zocker_160 <zocker1600 at posteo dot net>"
 
 name=lazygit
-version=0.52.0
+version=0.65.1
 release=1
 desc="simple terminal UI for git commands"
 homepage="https://github.com/jesseduffield/lazygit"
@@ -10,10 +10,10 @@ licenses=("MIT")
 
 #build_deps=("go-bin")
 
-sources=("https://github.com/jesseduffield/lazygit/releases/download/v${version}/lazygit_${version}_Linux_x86_64.tar.gz")
-checksums=('sha256:ca48006c41c94f389127fa67c29a866833c1aff9143eb5238939029d04404832')
+sources=("https://github.com/jesseduffield/lazygit/releases/download/v${version}/lazygit_${version}_linux_x86_64.tar.gz")
+checksums=('sha256:02beacbcda0fa342e50ae3480ba8147307353af3fb28e1d5f790e02329c201a6')
 
 package() {
-	cd "$srcdir/lazygit_${version}_Linux_x86_64"
+	cd "$srcdir"
 	install-binary lazygit
 }
